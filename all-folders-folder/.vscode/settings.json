@@ -1,5 +1,7 @@
 {
     "conventionalCommits.scopes": [
-        "files"
+        "files",
+        "folders",
+        "subject"
     ]
 }
