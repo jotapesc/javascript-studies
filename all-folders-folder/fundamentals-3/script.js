@@ -36,5 +36,30 @@ function createEnemy(enemyName, enemyHPoints, enemyDefense, enemyAttack) { // He
 }
 
 const enemy2 = createEnemy("Squid", 20, 5, 17);
-
 console.log(enemy2);
+
+console.log("==================================");
+
+// Constructor functions
+function Enemy(enemyName, enemyHPoints, enemyDefense, enemyAttack) {
+    this.enemyName = enemyName,
+    this.enemyHPoints = enemyHPoints,
+    this.enemyDefense = enemyDefense,
+    this.enemyAttack = enemyAttack,
+    this.enemySpecialAtk = function (enemyHPoints) {
+        if (enemyHPoints < Math.floor(enemyHPoints / 2)) {
+            console.log("Uses Special Attack!");
+        }
+
+        else {
+            console.log("Special Attack not ready yet!");
+        }
+    }
+
+}
+
+const enemy3 = new Enemy("Raccon", 40, 10, 25);
+console.log(enemy3);
+
+// Constructor functions x Factory functions
+// Basically they do the same thing, i prefer to use the "Constructor" version, but you do you
