@@ -43,18 +43,18 @@ console.log("==================================");
 // Constructor functions
 function Enemy(enemyName, enemyHPoints, enemyDefense, enemyAttack) {
     this.enemyName = enemyName,
-    this.enemyHPoints = enemyHPoints,
-    this.enemyDefense = enemyDefense,
-    this.enemyAttack = enemyAttack,
-    this.enemySpecialAtk = function (actualEnemyHPoints) {
-        if (actualEnemyHPoints <= Math.floor(Enemy.enemyHPoints / 2)) {
-            console.log("Uses Special Attack!");
-        }
+        this.enemyHPoints = enemyHPoints,
+        this.enemyDefense = enemyDefense,
+        this.enemyAttack = enemyAttack,
+        this.enemySpecialAtk = function (actualEnemyHPoints) {
+            if (actualEnemyHPoints <= Math.floor(Enemy.enemyHPoints / 2)) {
+                console.log("Uses Special Attack!");
+            }
 
-        else {
-            console.log("Special Attack not ready yet!");
+            else {
+                console.log("Special Attack not ready yet!");
+            }
         }
-    }
 
 }
 
@@ -65,7 +65,7 @@ console.log(enemy3);
 // Basically they do the same thing, i prefer to use the "Constructor" version, but you do you
 
 // Dynamic nature of objects
-const squidKing = {
+const squidKing = { //You can freely add or remove atributes and methods from objects in javascript
     names: "Squid King",
     hitpoints: 5000,
     attack: 200,
@@ -78,7 +78,7 @@ const squidKing = {
 squidKing.paralyzed = true;
 squidKing.bleeding = true;
 squidKing.cammo = function camouflage(actualHitPoints) {
-    if (actualHitPoints <= Math.floor(squidKing.hitpoints / 2)){
+    if (actualHitPoints <= Math.floor(squidKing.hitpoints / 2)) {
         squidKing.evasion = 100;
         delete squidKing.paralyzed;
     }
@@ -86,3 +86,10 @@ squidKing.cammo = function camouflage(actualHitPoints) {
 
 squidKing.cammo(2500);
 console.log(squidKing);
+
+// Cloning objects
+const squidy = Object.assign({}, enemy2); //(where it goes, where it came from)
+Object.assign(squidy, enemy2); //(where it goes, where it came from)
+console.log(squidy);
+
+const squidy2 = { ...enemy3 }; //spread method
