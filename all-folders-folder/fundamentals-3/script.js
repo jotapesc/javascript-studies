@@ -46,8 +46,8 @@ function Enemy(enemyName, enemyHPoints, enemyDefense, enemyAttack) {
     this.enemyHPoints = enemyHPoints,
     this.enemyDefense = enemyDefense,
     this.enemyAttack = enemyAttack,
-    this.enemySpecialAtk = function (enemyHPoints) {
-        if (enemyHPoints < Math.floor(enemyHPoints / 2)) {
+    this.enemySpecialAtk = function (actualEnemyHPoints) {
+        if (actualEnemyHPoints <= Math.floor(Enemy.enemyHPoints / 2)) {
             console.log("Uses Special Attack!");
         }
 
@@ -63,3 +63,26 @@ console.log(enemy3);
 
 // Constructor functions x Factory functions
 // Basically they do the same thing, i prefer to use the "Constructor" version, but you do you
+
+// Dynamic nature of objects
+const squidKing = {
+    names: "Squid King",
+    hitpoints: 5000,
+    attack: 200,
+    defense: 50,
+    specialAttack: function entangle() {
+        console.log("You're entangled");
+    }
+}
+
+squidKing.paralyzed = true;
+squidKing.bleeding = true;
+squidKing.cammo = function camouflage(actualHitPoints) {
+    if (actualHitPoints <= Math.floor(squidKing.hitpoints / 2)){
+        squidKing.evasion = 100;
+        delete squidKing.paralyzed;
+    }
+}
+
+squidKing.cammo(2500);
+console.log(squidKing);
