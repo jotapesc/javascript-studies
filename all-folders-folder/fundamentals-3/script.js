@@ -93,3 +93,9 @@ Object.assign(squidy, enemy2); //(where it goes, where it came from)
 console.log(squidy);
 
 const squidy2 = { ...enemy3 }; //spread method
+
+// Template literal
+console.log(`You can type anything the exactly way you want
+and the final result will be identical as the code.
+
+This can be very useful especially when you want to write an email to someone`);
