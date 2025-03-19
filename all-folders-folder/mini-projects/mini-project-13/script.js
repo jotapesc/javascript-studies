@@ -1,29 +1,26 @@
-// Create a function that checks if two objects have the same properties, and another one that checks if the object reference points to the same memory location
+// Create a object of blog posts that contains these following properties
+/*
+title
+message
+author
+views
+commentaries
+    [author, message]
+isLive
+*/
 
-function ItemCreator(itemName, itemDuration, itemRarity) {
-    this.itemName = itemName;
-    this.itemDuration = itemDuration;
-    this.itemRarity = itemRarity;
+function ObjectBuilder(title, message, author, views, commentaries, isLive) {
+    this.title = title;
+    this.message = message;
+    this.author = author;
+    this.views = views;
+    this.commentaries = commentaries;
+    this.isLive = isLive;
 }
 
-function checksPropertiesEquity(obj1, obj2) {
-    for (const key in obj1) {
-        if (obj1[key] !== obj2[key]) {
-            return false;
-        }
-    }
-    return true;
-}
+let author = "Gregory";
+let message = "this is a message";
 
-function checksMemoryAddressEquity(obj1, obj2) {
-    if (obj1 === obj2) {
-        return true;
-    }
-    return false;
-}
+let posts = new ObjectBuilder("title", message, author, 100, [author, message], true);
 
-const rock = new ItemCreator("Rocky", 60, "Common");
-const heroSword = new ItemCreator("World Breaker", 300, "Legendary");
-
-console.log(checksPropertiesEquity(rock, rock));
-console.log(checksMemoryAddressEquity(heroSword, heroSword));
+console.log(posts);
