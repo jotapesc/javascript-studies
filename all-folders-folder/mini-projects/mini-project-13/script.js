@@ -9,18 +9,19 @@ commentaries
 isLive
 */
 
-function ObjectBuilder(title, message, author, views, commentaries, isLive) {
+function ObjectBuilder(title, message, author) {
     this.title = title;
     this.message = message;
     this.author = author;
-    this.views = views;
-    this.commentaries = commentaries;
-    this.isLive = isLive;
+    this.views = 0;
+    this.commentaries = [author, message];
+    this.isLive = true;
 }
 
+let title = "title";
 let author = "Gregory";
 let message = "this is a message";
 
-let posts = new ObjectBuilder("title", message, author, 100, [author, message], true);
+let posts = new ObjectBuilder(title, message, author);
 
 console.log(posts);
