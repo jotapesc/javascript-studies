@@ -32,3 +32,14 @@ function evenID(brands) {
 }
 
 console.log(brands.find(evenID));
+
+console.log("==================================");
+
+// Arrow functions
+const bands = [
+    {bandName: "name1", id: 10},
+    {bandName: "name2", id: 15},
+    {bandName: "name3", id: 20},
+];
+
+console.log(brands.find((bands) => bands.id % 2 !== 0));
