@@ -64,6 +64,8 @@ console.log(enemy3);
 // Constructor functions x Factory functions
 // Basically they do the same thing, i prefer to use the "Constructor" version, but you do you
 
+console.log("==================================");
+
 // Dynamic nature of objects
 const squidKing = { //You can freely add or remove atributes and methods from objects in javascript
     names: "Squid King",
@@ -87,12 +89,16 @@ squidKing.cammo = function camouflage(actualHitPoints) {
 squidKing.cammo(2500);
 console.log(squidKing);
 
+console.log("==================================");
+
 // Cloning objects
 const squidy = Object.assign({}, enemy2); //(where it goes, where it came from)
 Object.assign(squidy, enemy2); //(where it goes, where it came from)
 console.log(squidy);
 
 const squidy2 = { ...enemy3 }; //spread method
+
+console.log("==================================");
 
 // Template literal
 console.log(`You can type anything the exactly way you want
