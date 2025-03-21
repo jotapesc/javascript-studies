@@ -106,3 +106,18 @@ const phrase = "Hello, welcome to my code!"
 console.log(phrase.split(" "));
 
 console.log("==================================");
+
+// Input
+let age = prompt("How old are you?");
+isUnderAge(age);
+
+function isUnderAge(age) {
+    if (age < 18) {
+        console.log("You're a minor");
+    }
+    
+    else {
+        console.log("You're not a minor");
+    }
+}
+
