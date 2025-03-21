@@ -90,3 +90,8 @@ let clone = [...merged];
 console.log(clone);
 
 console.log("==================================");
+
+// For Each
+const names = ["Claire", "Chris", "Albert", "Leon", "Ada"];
+
+names.forEach((charName, index) => console.log(`${index + 1}º ${charName}`))
