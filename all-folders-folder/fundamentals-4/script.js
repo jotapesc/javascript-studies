@@ -95,3 +95,14 @@ console.log("==================================");
 const names = ["Claire", "Chris", "Albert", "Leon", "Ada"];
 
 names.forEach((charName, index) => console.log(`${index + 1}º ${charName}`))
+
+console.log("==================================");
+
+// Combining based on something (join)
+console.log(names.join(" - "));
+
+// Dividing based on something (split)
+const phrase = "Hello, welcome to my code!"
+console.log(phrase.split(" "));
+
+console.log("==================================");
