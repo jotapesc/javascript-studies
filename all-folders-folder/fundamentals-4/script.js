@@ -61,3 +61,14 @@ console.log(numbers);
 numbers = [1, 2, 3, 4, 5, 6];
 numbers.length = 0;
 console.log(numbers);
+
+// Merging arrays
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const merged = first.concat(second);
+console.log(merged);
+
+// Dividing arrays
+const sliced = merged.slice(2, 4); // (where it starts, where it ends-1)
+console.log(sliced);
