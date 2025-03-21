@@ -63,12 +63,20 @@ numbers.length = 0;
 console.log(numbers);
 
 // Merging arrays
-const first = [1, 2, 3];
-const second = [4, 5, 6];
+let first = [1, 2, 3];
+let second = [4, 5, 6];
 
-const merged = first.concat(second);
+let merged = first.concat(second);
 console.log(merged);
 
 // Dividing arrays
-const sliced = merged.slice(2, 4); // (where it starts, where it ends-1)
+let sliced = merged.slice(2, 4); // (where it starts, where it ends-1)
 console.log(sliced);
+
+// Spread
+first = [1, 2, 3];
+second = [4, 5, 6];
+
+merged = [...first, "%", ...second];
+let clone = [...merged];
+console.log(clone);
