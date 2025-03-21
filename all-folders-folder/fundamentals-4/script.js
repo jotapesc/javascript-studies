@@ -43,3 +43,16 @@ const bands = [
 ];
 
 console.log(brands.find((bands) => bands.id % 2 !== 0));
+
+// Removing elements in an array
+// Beginning (shift)
+numbers.shift();
+console.log(numbers);
+
+// Middle (splice)
+numbers.splice(2, 1); //(index, who it will remove after that index, who it will add)
+console.log(numbers);
+
+// End (pop) 
+numbers.pop();
+console.log(numbers);
