@@ -44,6 +44,8 @@ const bands = [
 
 console.log(brands.find((bands) => bands.id % 2 !== 0));
 
+console.log("==================================");
+
 // Removing elements in an array
 // Beginning (shift)
 numbers.shift();
@@ -57,10 +59,14 @@ console.log(numbers);
 numbers.pop();
 console.log(numbers);
 
+console.log("==================================");
+
 // Emptying an array
 numbers = [1, 2, 3, 4, 5, 6];
 numbers.length = 0;
 console.log(numbers);
+
+console.log("==================================");
 
 // Merging arrays
 let first = [1, 2, 3];
@@ -73,6 +79,8 @@ console.log(merged);
 let sliced = merged.slice(2, 4); // (where it starts, where it ends-1)
 console.log(sliced);
 
+console.log("==================================");
+
 // Spread
 first = [1, 2, 3];
 second = [4, 5, 6];
@@ -80,3 +88,5 @@ second = [4, 5, 6];
 merged = [...first, "%", ...second];
 let clone = [...merged];
 console.log(clone);
+
+console.log("==================================");
