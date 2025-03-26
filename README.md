@@ -19,6 +19,6 @@ This repository contains my JavaScript studies, experiments, and small projects.
 ## 🛠️ How to Use  
 Clone this repository and explore the different files and folders. Feel free to modify, test, and experiment with the code!  
 
-```bash
-git clone https://github.com/your-username/your-repo.git
+```
+git clone https://github.com/jotapesc/javascript-studies.git
 ```
