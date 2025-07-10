@@ -22,6 +22,13 @@ This repository contains my JavaScript studies, experiments, and small projects.
 [optional footer(s)]
 ```
 
+## 🛠️ Prerequisites
+
+- JavaScript ES6+
+- HTML5+
+- (Opcional) Visual Studio Code
+- (Opcional) Live Server extension from Visual Studio Code
+
 ## ⚙️ How to use
 
 1. Clone the repository using this code below:
