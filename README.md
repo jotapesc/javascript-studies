@@ -3,12 +3,14 @@
 This repository contains my JavaScript studies, experiments, and small projects. It serves as a personal learning space where I explore different JavaScript concepts and techniques.  
 
 ## 📚 Topics Covered  
-- Basic syntax and data structures    
+
+- Basic syntax and data structures
 - ES6+ features  
 - Small projects and challenges  
 
 ## 📝 Commit Format
-```
+
+```text
 <type>[optional scope]: <description>
 
 [optional body]
@@ -16,9 +18,15 @@ This repository contains my JavaScript studies, experiments, and small projects.
 [optional footer(s)]
 ```
 
-## 🛠️ How to Use  
-Clone this repository and explore the different files and folders. Feel free to modify, test, and experiment with the code!  
+## ⚙️ How to use
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-```
+1. Clone the repository using this code below:
+
+    ```bash
+    git clone https://github.com/jotapesc/javascript-studies.git
+    cd javascript-studies
+    ```
+
+2. Open any .html file using your preferred browser;
+3. (Opcional) If you're using the Live Server extension from Visual Studio Code, go to the .html file and click the "Go Live" button in the bottom right corner;
+4. Open the console on your browser.
