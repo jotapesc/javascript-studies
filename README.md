@@ -14,13 +14,13 @@ This repository contains my JavaScript studies, experiments, and small projects.
 
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-```text
-<type>[optional scope]: <description>
+    ```text
+    <type>[optional scope]: <description>
 
-[optional body]
+    [optional body]
 
-[optional footer(s)]
-```
+    [optional footer(s)]
+    ```
 
 ## 🛠️ Prerequisites
 
