@@ -41,3 +41,7 @@ This repository contains my JavaScript studies, experiments, and small projects.
 2. Open any .html file using your preferred browser;
 3. (Opcional) If you're using the Live Server extension from Visual Studio Code, go to the .html file and click the "Go Live" button in the bottom right corner;
 4. Open the console on your browser.
+
+## 🧍 Author
+
+### João Pedro de Sousa Costa
